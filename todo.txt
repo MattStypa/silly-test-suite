@@ -1,0 +1,4 @@
+Fix first:
+Router pushes the same URL more than once onto the stack
+Unlisten on unmount in router. Test by click on throwing Link and click back
+Add Serve to silly-test-suite so cypress does not run against hot loading
