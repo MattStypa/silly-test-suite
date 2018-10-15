@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, navigate } from 'sillyrouter';
+import { Link, navigate } from 'sillyapp';
 
 class Links extends React.PureComponent {
   navigateTo = (path, params) => () => navigate(path, params);

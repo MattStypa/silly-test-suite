@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router } from 'sillyrouter';
-import { Store } from 'sillystore';
+import SillyApp from 'sillyapp';
 
 import Home from './Home.js';
 import User from './User.js';
@@ -9,7 +8,7 @@ import StorePage from './StorePage.js';
 import CatchAll from './CatchAll.js';
 import Fallback from './Home.js';
 
-const initialStore = {
+const store = {
   firstName: 'first name',
   lastName: 'last name',
   url: 'url',
@@ -27,9 +26,7 @@ const routes = [
 class App extends React.PureComponent {
   render() {
     return (
-      <Store initial={initialStore}>
-        <Router routes={routes}/>
-      </Store>
+      <SillyApp store={store} routes={routes}/>
     );
   }
 }

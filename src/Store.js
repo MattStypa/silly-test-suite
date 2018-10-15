@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect, setStore } from 'sillystore';
+import { connect, setStore } from 'sillyapp';
 
 class Store extends React.PureComponent {
   constructor(props) {
